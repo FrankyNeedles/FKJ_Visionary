@@ -133,19 +133,19 @@ export class FKJVisionary implements ISystem {
 
       /// --- Lets adjust our 3d model ---
       this.mercedes.getComponent(Transform).position.set(
-        metadata.meta.position.x,
-        metadata.meta.position.y,
-        metadata.meta.position.z
+        metadata.vehicle.position.x,
+        metadata.vehicle.position.y,
+        metadata.vehicle.position.z
       )
       this.mercedes.getComponent(Transform).scale.set(
-        metadata.meta.scale.x,
-        metadata.meta.scale.y,
-        metadata.meta.scale.z
+        metadata.vehicle.scale.x,
+        metadata.vehicle.scale.y,
+        metadata.vehicle.scale.z
       )
       this.mercedes.getComponent(Transform).rotation.setEuler(
-        metadata.meta.rotation.x,
-        metadata.meta.rotation.y,
-        metadata.meta.rotation.z
+        metadata.vehicle.rotation.x,
+        metadata.vehicle.rotation.y,
+        metadata.vehicle.rotation.z
       )
 
       ///////// Your landowner adjustable content ///////////
