@@ -86,14 +86,29 @@ export class FKJVisionary implements ISystem {
     animator.addClip(clipSkidCar)
 
 
-    clipOpenDoorR.play()
-    clipOpenDoorL.play()
-    clipTurnWheelB.play()
-    clipTurnWheelR.play()
-    clipTurnWheelL.play()
-    clipOnLed1.play()
-    clipOnLed2.play()
-    clipSkidCar.play()
+    clipOpenDoorR.playing = true
+    clipOpenDoorR.looping = true
+
+    clipOpenDoorL.playing = true
+    clipOpenDoorL.looping = true
+
+    clipTurnWheelB.playing = true
+    clipTurnWheelB.looping = true
+
+    clipTurnWheelR.playing = true
+    clipTurnWheelR.looping = true
+
+    clipTurnWheelL.playing = true
+    clipTurnWheelL.looping = true
+
+    clipOnLed1.playing = true
+    clipOnLed1.looping = true
+
+    clipOnLed2.playing = true
+    clipOnLed2.looping = true
+
+    clipSkidCar.playing = true
+    clipSkidCar.looping = true
 
     ///////// Your static scene assets ///////////
 
